@@ -1,0 +1,51 @@
+#headerabt{
+
+    text-align: center;
+}
+
+#infohome {
+    background-color: firebrick;
+    text-align: center;
+}
+
+#infohomer {
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+
+#cuatro {
+    background-color: salmon;
+}
+
+#tres {
+    background-color: lightblue
+}
+
+#dos {
+    background-color: azure;
+}
+
+#uno {
+    background-color: darkorange;
+}
+#imageuno
+{
+    padding-left: 25px;
+
+}
+#imagedos {
+    padding-left: 50px;
+}
+
+#imagetres {
+    padding-left: 75px;
+}
+
+#imagecuatro {
+    padding-left: 100px;
+}
+
+#imagecinco {
+    padding-left: 125px;
+}
+

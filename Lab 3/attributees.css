@@ -1,3 +1,13 @@
-#header {
+body {
     background-color: lightblue;
 }
+#urban { background-color: aquamarine;
+text-decoration-color: lightblue;
+
+
+}
+#earl { background-color: firebrick;
+    text-decoration: deeppink;
+}
+
+#jobs { background-color: darksalmon}
