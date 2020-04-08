@@ -122,7 +122,7 @@ let questions = [
         correct : "A"
     }]
         [{
-        question : "How many moons does the Earth have? ,
+        question : "How many moons does the Earth have? ,"
         choiceA : 1,
         choiceB : 2,
         choiceC : 3,
@@ -130,29 +130,22 @@ let questions = [
         correct : "A"
     }]
     [{
-    question : "are there are seven days in a week?,
-    choiceA : true,
-    choiceB : false,
-    correct: "A"
-} ]
+    question : "How many moons does the Earth have? ,
+    choiceA : 1,
+    choiceB : 2,
+    choiceC : 3,
+    choiceD : 4,
+    correct : "A"
+}]
     [{
-    question : "are there are seven days in a week?,
-    choiceA : true,
-    choiceB : false,
-    correct: "A"
-} ]
-    [{
-    question : "are there are seven days in a week?,
-    choiceA : true,
-    choiceB : false,
-    correct: "A"
-} ]
-    [{
-    question : "are there are seven days in a week?,
-    choiceA : true,
-    choiceB : false,
-    correct: "A"
-} ]
+    question : "How many moons does the Earth have? ,
+    choiceA : 1,
+    choiceB : 2,
+    choiceC : 3,
+    choiceD : 4,
+    correct : "A"
+}]
+
 
 const lastQuestion = questions.length -1;
 let runningQuestionIndex = 0;
