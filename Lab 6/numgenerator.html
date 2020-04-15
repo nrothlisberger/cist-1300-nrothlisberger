@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>random number generator</title>
+
+    <script type="text/javascript">
+        function display_c(){
+            var refresh=1000;
+            mytime=setTimeout('display_ct()',refresh)
+        }
+
+        function display_ct() {
+            var x = new Date()
+            document.getElementById('ct').innerHTML = x;
+            display_c();
+        }
+    </script>
+
+</head>
+
+<body onload=display_ct();>
+<span id='ct' ></span>
+
+<body>
+
+<p id="number"> </p>
+<button id="b" onclick="random();"> Generate </button>
+
+
+<script>
+    var arr = [];
+    while(arr.length < 20){
+        var r = Math.floor(Math.random() * 100) + 1;
+        var z= arr.toString();
+        if(arr.indexOf(r) === -1) arr.push(r);
+        document.getElementById("number").innerHTML = z;
+    }
+
+</script>
+<div id="todaysDate"></div>
+<button>show</button>
+<h1> results </h1>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
