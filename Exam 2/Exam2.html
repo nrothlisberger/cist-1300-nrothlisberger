@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>simple calculator</title>
+
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        function calc()
+        {
+            var n1 = parseFloat(document.getElementById('n1').value);
+            var n2 = parseFloat(document.getElementById('n2').value);
+            var n3 = parseFloat(document.getElementById('n3').value);
+            var n4 = parseFloat(document.getElementById('n4').value);
+            var n5 = parseFloat(document.getElementById('n5').value);
+
+
+            var oper = document.getElementById('operators').value;
+
+            if(oper === '+')
+            {
+                document.getElementById('result').value = n1+n2+n3+n4+n5;
+            }
+
+            if(oper === '-')
+            {
+                document.getElementById('result').value = n1-n2-n2-n3-n4-n5;
+            }
+
+            if(oper === '/')
+            {
+                document.getElementById('result').value = n1/n2/n3/n4/n5;
+            }
+
+            if(oper === 'X')
+            {
+                document.getElementById('result').value = n1*n2*n3*n4*n5;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+<input type="text" id="n1"/><br/><br/>
+<input type="text" id="n2"/><br/><br/>
+<input type="text" id="n3"/><br/><br/>
+<input type="text" id="n4"/><br/><br/>
+<input type="text" id="n5"/><br/><br/>
+
+
+
+
+<select id="operators">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="X">X</option>
+</select>
+
+<button onclick="calc();">=</button>
+<input type="text" id="result"/>
+
+</body>
+</html>
