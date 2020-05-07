@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+
+
+    <title>Nates quiz!</title>
+    <link href ="style3.css" rel ="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src = "assignment3.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#progressbar" ).progressbar({
+                value: 37
+            });
+        } );
+    </script>
+</head>
+<body>
+
+<div id="progressbar"></div>
+
+</head>
+
+
+<div id="dialog" title="Basic dialog">
+</div>
+
+
+    <script>
+        function countDown(secs,elem) {
+            var element = document.getElementById(elem);
+            element.innerHTML = "You have "+secs+" seconds to complete the Quiz!";
+            if(secs < 1) {
+                clearTimeout(timer);
+                element.innerHTML = '<h2>Quiz time up!</h2>';
+                $( function() {
+                    $( "#number_correct" ).dialog();
+                } );
+
+            }
+            secs--;
+            var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+        }
+    </script>
+    <div id="status"></div>
+    <script>countDown(600,"status");</script>
+
+</head>
+
+
+
+<h1>This is the best quiz on the internet!</h1>
+
+        <div id="progressBar">
+            <div class="progress"
+        </div>
+
+
+
+<form id = "quiz" name = "quiz">
+
+    <div class = "questions active" data-width="6.5"> What is the capital of Rhode Island?</div>
+    <input id = "textbox" type = "text" name = "question1">
+
+    <div class = "questions" data-width="12.0">What is the capital of Connecticut?</div>
+    <input type = "radio" id = "mc" name = "question2" value = "Hartford"> Hartford<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Heartford"> Heartford<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Henry Ford"> Henry Ford<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Hearty Sword"> Hearty Sword<br>
+
+    <div class = "questions" data-width="18.5">What is the capital of New York?</div>
+
+    <input type = "radio" id = "mc" name = "question3" value = "Albany"> Albany<br>
+    <input type = "radio" id = "mc" name = "question3" value = "All Benny's"> All Benny's<br>
+    <input type = "radio" id = "mc" name = "question3" value = "Boston"> Boston<br>
+    <input type = "radio" id = "mc" name = "question3" value = "Lincoln"> Lincoln<br>
+
+    <div class = "questions" data-width="25.0">What is the state with the most registered guns?</div>
+
+    <input type = "radio" id = "mc" name = "question4" value = "Texas"> Texas<br>
+    <input type = "radio" id = "mc" name = "question4" value = "Montana"> Montana<br>
+    <input type = "radio" id = "mc" name = "question4" value = "Idaho"> Idaho<br>
+    <input type = "radio" id = "mc" name = "question4" value = "vermont"> vermont<br>
+
+    <div class = "questions"data-width="31.5">What is the least populated state?</div>
+
+    <input type = "radio" id = "mc" name = "question5" value = "Texas"> Texas<br>
+    <input type = "radio" id = "mc" name = "question5" value = "Montana"> Montana<br>
+    <input type = "radio" id = "mc" name = "question5" value = "Idaho"> Idaho<br>
+    <input type = "radio" id = "mc" name = "question5" value = "vermont"> vermont<br>
+
+    <div class = "questions" data-width="38.0">What country borders the south of the US?</div>
+
+    <input type = "radio" id = "mc" name = "question6" value = "Brazil"> Brazil<br>
+    <input type = "radio" id = "mc" name = "question6" value = "Mexico"> Mexico<br>
+    <input type = "radio" id = "mc" name = "question6" value = "India"> India<br>
+    <input type = "radio" id = "mc" name = "question6" value = "Austalia"> Australia<br>
+
+    <div class = "questions" data-width="44.5">How many seconds in a minute?</div>
+
+    <input type = "radio" id = "mc" name = "question7" value = "24"> 24<br>
+    <input type = "radio" id = "mc" name = "question7" value = "60"> 60<br>
+    <input type = "radio" id = "mc" name = "question7" value = "1000"> 1000<br>
+    <input type = "radio" id = "mc" name = "question7" value = "10"> 10<br>
+
+    <div class = "questions" data-width="51.0">Which letter is at the beginnning of the alphabet?</div>
+
+    <input type = "radio" id = "mc" name = "question8" value = "a"> a<br>
+    <input type = "radio" id = "mc" name = "question8" value = "b"> b<br>
+    <input type = "radio" id = "mc" name = "question8" value = "c"> c<br>
+    <input type = "radio" id = "mc" name = "question8" value = "d"> d<br>
+
+    <div class = "questions" data-width="57.5">What letter is at the end of the alphabet?</div>
+
+    <input type = "radio" id = "mc" name = "question9" value = "v"> v<br>
+    <input type = "radio" id = "mc" name = "question9" value = "b"> b<br>
+    <input type = "radio" id = "mc" name = "question9" value = "d"> d<br>
+    <input type = "radio" id = "mc" name = "question9" value = "z"> z<br>
+
+    <div class = "questions" data-width="64.0">Which direction does the sun set?</div>
+
+    <input type = "radio" id = "mc" name = "question10" value = "south"> south<br>
+    <input type = "radio" id = "mc" name = "question10" value = "north"> north<br>
+    <input type = "radio" id = "mc" name = "question10" value = "west"> west<br>
+    <input type = "radio" id = "mc" name = "question10" value = "east"> east<br>
+
+    <div class = "questions" data-width="70.5">How many days in a week?</div>
+
+    <input type = "radio" id = "mc" name = "question11" value = "5"> 5<br>
+    <input type = "radio" id = "mc" name = "question11" value = "31"> 31<br>
+    <input type = "radio" id = "mc" name = "question11" value = "7"> 7<br>
+    <input type = "radio" id = "mc" name = "question11" value = "365"> 365<br>
+
+    <div class = "questions" data-width="77.0">What class is this quiz for?</div>
+
+    <input type = "radio" id = "mc" name = "question12" value = "CIST-1300"> CIST-1300<br>
+    <input type = "radio" id = "mc" name = "question12" value = "human anatomy"> human anatomy<br>
+    <input type = "radio" id = "mc" name = "question12" value = "physics"> physics<br>
+    <input type = "radio" id = "mc" name = "question12" value = "algebra"> algebra<br>
+
+    <div class = "questions" data-width="83.5">How many people live in Nebraska?</div>
+
+    <input type = "radio" id = "mc" name = "question13" value = "100"> 100<br>
+    <input type = "radio" id = "mc" name = "question13" value = "350"> 350<br>
+    <input type = "radio" id = "mc" name = "question13" value = "2 million"> 2 million<br>
+    <input type = "radio" id = "mc" name = "question13" value = "10 million"> 10 million<br>
+
+    <div class = "questions" data-width="90.0">What is the smallest state in the US?</div>
+
+    <input type = "radio" id = "mc" name = "question14" value = "tenessee"> tenesee<br>
+    <input type = "radio" id = "mc" name = "question14" value = "New Jersey"> New Jersey<br>
+    <input type = "radio" id = "mc" name = "question14" value = "Oklahoma"> Oklahoma<br>
+    <input type = "radio" id = "mc" name = "question14" value = "Maine"> Maine<br>
+
+    <div class = "questions" data-width="100.0">This was a good quiz. </div>
+
+    <input type = "radio" id = "mc" name = "question15" value = "true"> a<br>
+    <input type = "radio" id = "mc" name = "question15" value = "false"> b<br>
+
+
+    <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+</form>
+
+
+
+
+<script type="text/javascript">
+        let active = document.querySelector('.active);
+        let progress = document.querySelector('.progress);
+        let questions = document.querySelector(questions);
+
+        function questions(){
+        if(active.previousElementSibling){
+        questions.style.display = 'inline-block';
+
+        }else{
+        question.style.display = 'none';
+        }
+}
+
+
+
+        questions.addEventListener('click', function(){
+    let prevElem = active.previousElementSibling;
+    active.classList.remove('active');
+    active = prevElem;
+    active.classList.add('active');
+
+progress.style.width = active.attributes[1].value+'%';
+
+
+
+}};
+
+    questions();
+</script>
+<div id = "after_submit">
+    <p id = "number_correct"></p>
+    <p id = "message"></p>
+    <img id = "picture">
+</div>
+
+
+
+
+</html>
+</body>
